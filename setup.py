@@ -1,7 +1,7 @@
 from setuptools import setup
 setup (
     name = 'colortab' ,
-    version = '0.1.0' ,
+    version = '0.1.2' ,
     py_modules = [ 'colortab' ],
     description='Python-Markdown MkDocs colortab',
     license="MIT",
@@ -9,7 +9,7 @@ setup (
     
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    keywords=['markdown', 'extensions', 'mkdocs', 'plugins'],
+    keywords=['markdown', 'extensions', 'mkdocs', 'plugins', 'colortab'],
 
     
     install_requires  = [ 'markdown>=3.0' ], 

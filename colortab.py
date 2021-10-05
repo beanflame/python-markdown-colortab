@@ -21,21 +21,14 @@ class OCXMetadata(Extension):
         md.preprocessors.register(OCXSectionPreprocessor(md), "ocxsection", 29)
         md.treeprocessors.register(OCXSectionTreeProcessor(md), "ocxsection", 29)
         
-        # hello
-        md.inlinePatterns.add('light', SimpleTagPattern(r'(@1)(.*?)@', 'light'), '>not_strong')
+        md.inlinePatterns.add('virbit-light', SimpleTagPattern(r'(=~)(.*?)~=', 'virbit-light'), '>not_strong')
+        md.inlinePatterns.add('virbit-toek', SimpleTagPattern(r'(&~)(.*?)~&', 'virbit-toek'), '>not_strong')
         
-        md.inlinePatterns.add('light0', SimpleTagPattern(r'(@0)(.*?)@', 'light0'), '>not_strong')
+        md.inlinePatterns.add('virbit-question', SimpleTagPattern(r'(？~)(.*?)~？', 'virbit-question'), '>not_strong')
+        md.inlinePatterns.add('virbit-note', SimpleTagPattern(r'(！~)(.*?)~！', 'virbit-note'), '>not_strong')
         
-        md.inlinePatterns.add('light1', SimpleTagPattern(r'(@2)(.*?)@', 'light1'), '>not_strong')
-
-        md.inlinePatterns.add('light2', SimpleTagPattern(r'(@3)(.*?)@', 'light2'), '>not_strong')
-
-        md.inlinePatterns.add('light3', SimpleTagPattern(r'(@4)(.*?)@', 'light3'), '>not_strong')
-
-        md.inlinePatterns.add('toek', SimpleTagPattern(r'(Շ)(.*?)Շ', 'toek'), '>not_strong')
-        
-        
-        
+        md.inlinePatterns.add('virbit-correct', SimpleTagPattern(r'(√~)(.*?)~√', 'virbit-correct'), '>not_strong')
+        md.inlinePatterns.add('virbit-error', SimpleTagPattern(r'(×~)(.*?)~×', 'virbit-error'), '>not_strong')
         
         
 
