@@ -1,7 +1,7 @@
 from setuptools import setup
 setup (
     name = 'colortab' ,
-    version = '0.1.5' ,
+    version = '0.1.0' ,
     py_modules = [ 'colortab' ],
     description='Python-Markdown MkDocs colortab',
     license="MIT",
